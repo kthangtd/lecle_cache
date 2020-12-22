@@ -1,0 +1,27 @@
+name: lecle_cache
+description: Cache with Key-Value
+version: 0.0.1
+author: kthangtd
+homepage:
+publish_to: none
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  shared_preferences: ^0.5.7+3
+
+  # security
+  lecle_crypto: 
+    git:
+      url: git://github.com/kthangtd/lecle_crypto.git
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
