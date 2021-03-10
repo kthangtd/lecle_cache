@@ -2,7 +2,6 @@ name: lecle_cache
 description: Cache with Key-Value
 version: 0.0.1
 author: kthangtd
-homepage:
 publish_to: none
 
 environment:
@@ -13,7 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  shared_preferences: ^0.5.7+3
+  shared_preferences: '>=2.0.0 <=3.0.0'
 
   # security
   lecle_crypto: 
