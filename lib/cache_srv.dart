@@ -115,6 +115,8 @@ class _CacheService {
     });
   }
 
+  List<String> get keys => _service.getKeys().map((e) => cryptoSrv.decrypt(e)).toList();
+
   String _encryptKey(String key) {
     return cryptoSrv.encrypt(key);
   }
