@@ -115,6 +115,15 @@ class _CacheService {
     });
   }
 
+  void removeExcluded(String prefix) {
+    _service.getKeys().forEach((key) {
+      final k = cryptoSrv.decrypt(key);
+      if (!k.startsWith(prefix)) {
+        _service.remove(key);
+      }
+    });
+  }
+
   String _encryptKey(String key) {
     return cryptoSrv.encrypt(key);
   }
